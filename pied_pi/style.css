@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+#header{
+    width: 100%;
+    height: 84px;
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+#header img{
+    width: 184px;
+    height: auto;
+    position: relative;
+    left: 55px;
+    top: 20px;
+}
+#menu{
+    position: relative;
+    left: 970px;
+    bottom: 15px;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*JUmbo*/
+.jumbo{
+    background-image: url("img/bCK1.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 84px;
+    height: 400px;
+}
+.jumbo h1{
+    padding: 140px;
+    font-size: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+/*Problem*/
+#prob h1, #intro h1, #team h1{
+    text-align: center;
+    color: #16a085;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+}
+#prob p{
+    padding: 0 60px;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+}
+/*HERO*/
+.hero{
+    background-image: url("img/b2.png");
+    height: 483px;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0;
+}
+#quote{
+    position: relative;
+    top: 120px;
+    left: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    z-index: 0;
+}
+/*intro*/
+#first img{
+    float: left;
+    height: 80px;
+    width: auto;
+    padding: 0 20px ;
+}
+#first, .text{
+    font-size: 30px;
+    font-family: Roboto;
+}
+.text{
+    padding: 0 40px;
+}
+#first{
+    margin: 20px;
+}
+/*team*/
+#team{
+    background-color: #eeeeee;
+    color: #16a085;
+}
+#team img{
+    height: 168px;
+    width: auto;
+}
+
+.members{
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    margin: 0 250px;
+}
+.member{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.name{
+    font-size: 24px;
+    text-align: left;
+}
+.position{
+    font-style: italic;
+    color: black;
+}
+/**/
+.footer, #bottom{
+    height: 100px;
+    background-color: #282828;
+    margin: 0;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+/**/
