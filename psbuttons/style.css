@@ -1,0 +1,31 @@
+img{
+	width: 300px;
+	height: 300px;
+}
+div{
+	position: absolute;
+	top: 20%;
+	left: 6%
+}
+#tri{
+	clip-path: polygon(51% 0, 0% 100%, 100% 100%);
+}
+#circle{
+	clip-path: circle(50% at 50% 50%);
+}
+#x{
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+#sq{
+	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+body{
+	background-image: linear-gradient(#F3BAE3, #9CBAED);
+	background-repeat: no-repeat;
+	height: 608px;
+}
+img:hover{
+	transform:  rotateX(180deg) scale(0.5);
+	transition-delay: 1s;
+
+}
