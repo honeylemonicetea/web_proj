@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #1f1f1f;
+    color: white;
+}
+.header li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+}
+.header li:hover, .header a:hover{
+    background-color: white;
+    color: black;
+}
+.header ul{
+    margin-left: 25%;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+nav{
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header{
+    height: 500px;
+    background-image: url("modern-affliction-guvnhd3hbxw-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 50;
+}
+body, h1{
+    margin: 0;
+}
+
+#ME{
+    color: white;
+    z-index: 75;
+    padding-top: 16%;
+    padding-left: 43%;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+}
+#ava{
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+    margin-left: 40px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    left: 5%;
+    position: relative;
+    width: 90%;
+}
+.container img{
+    width: 380px;
+    padding: 10px;
+}
+#about p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    width: 90%;
+    padding-left: 40px;
+}
+section{
+    padding-top: 100px;
+}
+#about{
+    margin-left: 40px;
+}
+footer{
+    height: 20px;
+    background-color: grey;
+    display: flex;
+}
+footer p{
+    display: flex;
+}
+button{
+    margin-left: 45%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.window{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+
+    z-index: 900;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    width: 500px;
+    max-width: 80%;
+    color: black;
+    font-family: "Roboto Light";
+}
+.window.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.pop-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+.pop-head .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pop-head .close-button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.pop-body{
+    padding: 10px;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    transition: 200ms ease-in-out;
+    z-index: 800;
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
